@@ -43,6 +43,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   define MATRIX_COL_PINS { D7, C6, B5, B4, E6, D4, B6, F6, F7, D6, B7 }
 #endif
 #   define UNUSED_PINS
+#elif defined(ATREUS_BLEFeather)
+#   define MATRIX_ROW_PINS { PD0, PD1, PD3, PD2 }
+#   define MATRIX_COL_PINS { PB7, PD6, PF7, PF6, PB6, /* choose different pins*/ PF5, PF4, PB3 /*D4, E6, B4,*/ PB5, PC6, PD7 }
+#endif
+#   define UNUSED_PINS
 #elif defined(ATREUS_TEENSY2)
 #   define MATRIX_ROW_PINS { D0, D1, D2, D3 }
 #   define MATRIX_COL_PINS { F6, F5, F4, B7, B6, B5, B4, B3, B2, B1, B0 }
